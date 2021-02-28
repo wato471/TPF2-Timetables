@@ -305,7 +305,7 @@ function timetable.getNextConstraint(constraint, time)
         arrMin = v[1]
         arrSec = v[2]
         diffMin = timetable.getDifference(timeMin, arrMin)
-        diffSec = timetable.getDifference(timeSec, arrMin)
+        diffSec = timetable.getDifference(timeSec, arrSec)
         diff = (diffMin * 60) + diffSec
         if(diff < res.diff) then
             res = {diff = diff, value = v}
